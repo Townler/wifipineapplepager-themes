@@ -43,7 +43,7 @@
       "recolor_palette": "soft_white"
     },
     "Battery": {
-    "x": 435,
+    "x": 430,
       "y": 7,
       "recolor_palette": "cyan",
       "layers": {

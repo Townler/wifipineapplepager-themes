@@ -1,7 +1,7 @@
 {
   "template": {
     "screen_name": "payloads_dashboard",
-    "status_bar": "default",
+    "status_bar": "payloads",
     "windowed_canvas": true,
     "cache_canvases": true,
     "button_map": {
@@ -15,8 +15,45 @@
     "background": {
       "layers": [
         { "image_path": "assets/payloads_dashboard/payloads_bg.png", "x": 0, "y": 0 },
-        { "variable_name": "$_LIST_SIZE", "x": 375, "y": 206, "string_template": {"text_size":"small","text_color_palette": "medium_gray", "center_text_within": { "draw_bounds": false, "start_x": 365, "end_x": 385, "start_y": 206, "end_y": 218 }}},
-        { "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT", "x": 390, "y": 206, "use_template": "list_pagination_label" }
+        
+        { 
+          "variable_name": "$_LIST_SIZE", 
+          "x": 115, "y": 53, 
+          "string_template": {
+            "text_size": "small",
+            "text_color_palette": "soft_white", 
+            "center_text_within": { 
+              "draw_bounds": false, 
+              "start_x": 120, "end_x": 150, 
+              "start_y": 50, "end_y": 62 
+            }
+          }
+        },
+        { 
+          "text": "Items",
+            "text_size": "small",
+            "text_color_palette": "soft_white", 
+          "x": 115, "y": 73
+        },
+        { 
+          "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT", 
+          "x": 115, "y": 147, 
+          "string_template": {
+            "text_size": "small",
+            "text_color_palette": "soft_white",
+            "center_text_within": { 
+              "draw_bounds": false, 
+              "start_x": 120, "end_x": 150, 
+              "start_y": 147, "end_y": 159 
+            }
+          }
+        },
+        { 
+          "text": "Pages",
+            "text_size": "small",
+            "text_color_palette": "soft_white", 
+          "x": 115, "y": 165      
+        }
       ]
     },
     "pages": [
@@ -25,15 +62,15 @@
           {
             "id": "Slot0",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 204, "y": 60,
-                "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
-              { "image_path": "assets/folder.png", "x": 177, "y": 58, "recolor_palette": "magenta" }
+              { "variable_name": "$_LIST_ITEM", "x": 215, "y": 40,
+                "string_template": { "text_size": "medium", "text_color_palette": "disabled_light_gray", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/folder.png", "x": 185, "y": 38, "recolor_palette": "disabled_light_gray" }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 204, "y": 60,
-              "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
-              { "image_path": "assets/payloads_dashboard/arrow.png", "x": 154, "y": 62 },
-              { "image_path": "assets/folder.png", "x": 177, "y": 58, "recolor_palette": "magenta" }
+              { "variable_name": "$_LIST_ITEM", "x": 215, "y": 40,
+              "string_template": { "text_size": "medium", "text_color_palette": "soft_white", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/payloads_dashboard/arrow.png", "x": 165, "y": 42 },
+              { "image_path": "assets/folder.png", "x": 185, "y": 38, "recolor_palette": "soft_white" }
             ],
             "target": "payloads_for_category_list",
             "variable": "$_LIST_ITEM"
@@ -41,15 +78,15 @@
           {
             "id": "Slot1",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 89,
-              "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
-              { "image_path": "assets/folder.png", "x": 177, "y": 87, "recolor_palette": "magenta" }
+              { "variable_name": "$_LIST_ITEM", "x": 215, "y": 69,
+              "string_template": { "text_size": "medium", "text_color_palette": "disabled_light_gray", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/folder.png", "x": 185, "y": 67, "recolor_palette": "disabled_light_gray" }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 89,
-              "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
-              { "image_path": "assets/payloads_dashboard/arrow.png", "x": 154, "y": 91 },
-              { "image_path": "assets/folder.png", "x": 177, "y": 87, "recolor_palette": "magenta" }
+              { "variable_name": "$_LIST_ITEM", "x": 215, "y": 69,
+              "string_template": { "text_size": "medium", "text_color_palette": "soft_white", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/payloads_dashboard/arrow.png", "x": 165, "y": 71 },
+              { "image_path": "assets/folder.png", "x": 185 , "y": 67, "recolor_palette": "soft_white" }
             ],
             "target": "payloads_for_category_list",
             "variable": "$_LIST_ITEM"
@@ -57,15 +94,15 @@
           {
             "id": "Slot2",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 118,
-              "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
-              { "image_path": "assets/folder.png", "x": 177, "y": 116, "recolor_palette": "magenta" }
+              { "variable_name": "$_LIST_ITEM", "x": 215, "y": 98,
+              "string_template": { "text_size": "medium", "text_color_palette": "disabled_light_gray", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/folder.png", "x": 185, "y": 96, "recolor_palette": "disabled_light_gray" }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 118,
-              "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
-              { "image_path": "assets/payloads_dashboard/arrow.png",  "x": 154, "y": 120 },
-              { "image_path": "assets/folder.png", "x": 177, "y": 116, "recolor_palette": "magenta" }
+              { "variable_name": "$_LIST_ITEM", "x": 215, "y": 98,
+              "string_template": { "text_size": "medium", "text_color_palette": "soft_white", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/payloads_dashboard/arrow.png",  "x": 165, "y": 100 },
+              { "image_path": "assets/folder.png", "x": 185, "y": 96, "recolor_palette": "soft_white" }
             ],
             "target": "payloads_for_category_list",
             "variable": "$_LIST_ITEM"
@@ -73,15 +110,15 @@
           {
             "id": "Slot3",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 147,
-              "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
-              { "image_path": "assets/folder.png", "x": 177, "y": 146, "recolor_palette": "magenta" }
+              { "variable_name": "$_LIST_ITEM", "x": 215, "y": 127,
+              "string_template": { "text_size": "medium", "text_color_palette": "disabled_light_gray", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/folder.png", "x": 185, "y": 126, "recolor_palette": "disabled_light_gray" }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 147,
-              "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
-              { "image_path": "assets/payloads_dashboard/arrow.png", "x": 154, "y": 149 },
-              { "image_path": "assets/folder.png", "x": 177, "y": 146, "recolor_palette": "magenta" }
+              { "variable_name": "$_LIST_ITEM", "x": 215, "y": 127,
+              "string_template": { "text_size": "medium", "text_color_palette": "soft_white", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/payloads_dashboard/arrow.png", "x": 165, "y": 129 },
+              { "image_path": "assets/folder.png", "x": 185, "y": 126, "recolor_palette": "soft_white" }
             ],
             "target": "payloads_for_category_list",
             "variable": "$_LIST_ITEM"
@@ -89,15 +126,15 @@
           {
             "id": "Slot4",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 176,
-              "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
-              { "image_path": "assets/folder.png", "x": 177, "y": 174, "recolor_palette": "magenta" }
+              { "variable_name": "$_LIST_ITEM", "x": 215, "y": 158,
+              "string_template": { "text_size": "medium", "text_color_palette": "disabled_light_gray", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/folder.png", "x": 185, "y": 157, "recolor_palette": "disabled_light_gray" }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 176,
-              "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
-              { "image_path": "assets/payloads_dashboard/arrow.png", "x": 154, "y": 178 },
-              { "image_path": "assets/folder.png", "x": 177, "y": 174, "recolor_palette": "magenta" }
+              { "variable_name": "$_LIST_ITEM", "x": 215, "y": 158,
+              "string_template": { "text_size": "medium", "text_color_palette": "soft_white", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/payloads_dashboard/arrow.png", "x": 165, "y": 158 },
+              { "image_path": "assets/folder.png", "x": 185, "y": 157, "recolor_palette": "soft_white" }
             ],
             "target": "payloads_for_category_list",
             "variable": "$_LIST_ITEM"
