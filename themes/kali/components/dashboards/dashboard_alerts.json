@@ -22,7 +22,7 @@
             { "text": "Evil AP Auth Captured", "x": 160, "y": 60, "text_color_palette": "grey" }
           ],
           "selected_layers": [
-            { "text": "Evil AP Auth Captured", "x": 160, "y": 60, "text_color_palette": "dark_red" },
+            { "text": "Evil AP Auth Captured", "x": 160, "y": 60, "text_color_palette": "light_blue" },
             { "image_path": "assets/alerts_dashboard/sub.png","x": 125, "y": 65 }
 
           ],
@@ -37,7 +37,7 @@
             { "text": "Deauth Flood Detected", "x": 160, "y": 87, "text_color_palette": "grey" }
           ],
           "selected_layers": [
-            { "text": "Deauth Flood Detected", "x": 160, "y": 87, "text_color_palette": "dark_red" },
+            { "text": "Deauth Flood Detected", "x": 160, "y": 87, "text_color_palette": "light_blue" },
             { "image_path": "assets/alerts_dashboard/sub.png","x": 125, "y": 92 }
 
           ],
@@ -52,7 +52,7 @@
             { "text": "New Client Connected", "x": 160, "y": 118, "text_color_palette": "grey" }
           ],
           "selected_layers": [
-            { "text": "New Client Connected", "x": 160, "y": 118, "text_color_palette": "dark_red" },
+            { "text": "New Client Connected", "x": 160, "y": 118, "text_color_palette": "light_blue" },
             { "image_path": "assets/alerts_dashboard/sub.png","x": 125, "y": 123 }
 
           ],
@@ -67,7 +67,7 @@
             { "text": "Handshake Captured", "x": 160, "y": 146, "text_color_palette": "grey" }
           ],
           "selected_layers": [
-            { "text": "Handshake Captured", "x": 160, "y": 146, "text_color_palette": "dark_red" },
+            { "text": "Handshake Captured", "x": 160, "y": 146, "text_color_palette": "light_blue" },
             { "image_path": "assets/alerts_dashboard/sub.png","x": 125, "y": 151 }
           ],
           "x": 0,
