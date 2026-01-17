@@ -16,7 +16,7 @@ TermAfterHire
 
 Theme Version: 1.0
 
-Firmware Version: 1.0.4
+Firmware Version: 1.0.6
 ## Details
 Contains layout changes to fit the theme.
 
