@@ -1,6 +1,6 @@
 # Ninety Eight
 - Author: Cribbit
-- Version: 1.0
+- Version: 1.0.1
 
 ## Change Log
 | Version | Changes         |
